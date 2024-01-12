@@ -1,0 +1,118 @@
+@import url(./globalStyles.css);
+
+.header__container {
+    background-color: var(--black-300);
+    color: var(--white-100);
+}
+
+.header__content {
+    max-width: 1110px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    border-bottom: 0.2px solid var(--white-100);
+}
+
+.header__list {
+    list-style: none;
+    padding-block: 2.3rem;
+
+    display: flex;
+    align-items: center;
+    gap: 2.1rem;
+
+}
+
+.list__item--link{
+    font-family: 'Manrope', sans-serif;
+    font-size: var(--fs-100);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--white-100);
+}
+
+.header__icon--cart {
+    cursor: pointer;
+}
+
+/* banner */
+
+.banner__container {
+    background-color: var(--black-300);
+    height: 730px;
+}
+
+.banner__content {
+    display: flex;
+    align-items: center;
+
+}
+
+.banner__background {
+    background-image: url("../../assets/home/desktop/image-hero.jpg");
+    background-position: 80%;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    width: 700px;
+    height: 700px;
+}
+
+.banner__information {
+    max-width: 400px;
+}
+
+.information__product {
+    font-size: var(--fs-200);
+    color: var(--white-100);
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    opacity: 0.4964;
+}
+
+.information__title {
+    font-size: var(--fs-900);
+    color: var(--white-100);
+    font-weight: 700;
+    letter-spacing: 2px;
+    line-height: 58px;
+    text-transform: uppercase;
+
+    padding-block: 1.5rem;
+}
+
+.information__text {
+    font-size: var(--fs-300);
+    color: var(--white-100);
+    font-weight: 500;
+    line-height: 25px;
+    opacity: 0.75;
+}
+
+.banner__button--link {
+    width: 160px;
+    padding-block: 15px;
+    margin-top: 40px;
+    background-color: var(--orange-100);
+    border: transparent;
+    cursor: pointer;
+
+    transition: all 0.1s ease-in-out;
+}
+
+.button__link {
+    color: var(--white-100);
+    font-size: var(--fs-100);
+    text-transform: uppercase;
+    font-weight: 700;
+
+    letter-spacing: 2px;
+}
+
+.banner__button--link:hover {
+    background-color: var(--orange-200);
+
+}
