@@ -9,7 +9,7 @@
     --black-100: #000000;
 
     --white-100: #ffffffff; 
-    --white-200: #f1f1f1f1;
+    --white-200: #f1f1f1;
     --white-300: #fafafafa;
 
     --red-wrong: #CD2C2C;
@@ -43,8 +43,13 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none;
+}
+
 .banner__content,
-.header__content {
+.header__content,
+.products__content {
     max-width: 1110px;
     margin: 0 auto;
 }
