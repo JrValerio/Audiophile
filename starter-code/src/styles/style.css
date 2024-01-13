@@ -1,44 +1,6 @@
 @import url(./globalStyles.css);
 
-.header__container {
-    background-color: var(--black-300);
-    color: var(--white-100);
-}
-
-.header__content {
-    max-width: 1110px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    border-bottom: 0.2px solid var(--white-100);
-}
-
-.header__list {
-    padding-block: 2.3rem;
-
-    display: flex;
-    align-items: center;
-    gap: 2.1rem;
-
-}
-
-.list__item--link{
-    font-family: 'Manrope', sans-serif;
-    font-size: var(--fs-100);
-    font-weight: 700;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    color: var(--white-100);
-}
-
-.header__icon--cart {
-    cursor: pointer;
-}
-
-/* banner */
-
+/* banner - HOME */
 .banner__container {
     background-color: var(--black-300);
     height: 730px;
@@ -47,7 +9,6 @@
 .banner__content {
     display: flex;
     align-items: center;
-
 }
 
 .banner__background {
@@ -92,31 +53,16 @@
 }
 
 .banner__button--link {
-    width: 160px;
-    padding-block: 15px;
-    margin-top: 40px;
+    margin-top: 2.5rem;
     background-color: var(--orange-100);
-    border: transparent;
-    cursor: pointer;
-
-    transition: all 0.1s ease-in-out;
-}
-
-.button__link {
     color: var(--white-100);
-    font-size: var(--fs-100);
-    text-transform: uppercase;
-    font-weight: 700;
-
-    letter-spacing: 2px;
 }
 
 .banner__button--link:hover {
     background-color: var(--orange-200);
-
 }
 
-/* seção de produtos */
+/* seção de produtos - HOME*/
 
 .products__list {
     display: flex;
@@ -124,15 +70,14 @@
     justify-content: space-between;
 
     padding-top: 200px;
-
 }
 
 .list__item--product {
     max-width: 350px;
-    width: 350px;
+    width: 21rem;
     height: 200px;
     background-color: var(--white-200);
-    border-radius: 8px;
+    border-radius: 0.5rem;
 
     display: flex;
     flex-direction: column;
@@ -143,12 +88,8 @@
 
 .product__image {
     width: 230px;
-    top: -110px;
+    top: -70px;
     position: absolute;
-
-    filter: drop-shadow(2px 20px 5px rgba(0, 0, 0, 0.3)) 
-            drop-shadow(4px 8px 50px rgba(0, 0, 0, 0.2)) 
-            drop-shadow(6px 12px 50px rgba(0, 0, 0, 0.1));
 }
 
 .product__text {
@@ -168,7 +109,6 @@
     gap: 10px;
 }
 
-
 .product__link--item {
     color: var(--black-100);
     font-size: var(--fs-100);
@@ -176,4 +116,55 @@
     text-transform: uppercase;
     letter-spacing: 2px;
     opacity: 0.5;
+}
+
+.recommended__container {
+    margin-top: 10rem;
+}
+
+
+.recommended__item {
+    background: url("../../assets/shared/desktop/image-category-thumbnail-speakers.png") no-repeat left 190px/ contain ;
+
+    background-color: var(--orange-100);
+    border-radius: 0.5rem;
+    height: 580px;
+    
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+}
+
+.item__container {
+    margin-right: 6.25rem;
+}
+
+.item__title {
+    max-width: 16.25rem;
+    font-size: var(--fs-900);
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    line-height: 60px;
+    color: var(--white-100);
+}
+
+.item__text {
+    max-width: 350px;
+    padding-top: 1.5rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: var(--white-100);
+}
+
+.item__button--full {
+    background-color: var(--black-100);
+    color: var(--white-100);
+    margin-top: 2.5rem;
+}
+
+.item__button--full:hover{
+    background-color: var(--gray-100);
+
 }
