@@ -261,8 +261,9 @@
 }
 
 .footer {
+  top: 200px;
   height: 365px;
-
+  margin: 0 auto;
   background-color: var(--black-200);
   color: var(--white-100);
   padding: 16px 0;
