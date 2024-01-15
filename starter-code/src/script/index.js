@@ -1,3 +1,41 @@
+// HTML para o "Header"
+const headerHTML = `
+<header class="header__container">
+      <div class="header__content">
+        <p class="header__title">
+          <img
+            src="./starter-code/assets/shared/desktop/logo.svg"
+            alt="Logo audiophile"
+          />
+        </p>
+        
+        <nav>
+          <ul class="header__list">
+            <li class="list__item">
+              <a class="list__item--link" href="#home">Home</a>
+            </li>
+            <li class="list__item">
+              <a class="list__item--link" href="#headphones">Headphones</a>
+            </li>
+            <li class="list__item">
+              <a class="list__item--link" href="#speakers">Speakers</a>
+            </li>
+            <li class="list__item">
+              <a class="list__item--link" href="#earphones">Earphones</a>
+            </li>
+          </ul>
+        </nav>
+        
+        <p class="header__icon--cart">
+          <img
+            src="./starter-code/assets/shared/desktop/icon-cart.svg"
+            alt="Icone de carrinho"
+          />
+        </p>
+      </div>
+    </header>
+    `;
+
 // HTML da Seção "About"
 const aboutHTML = `
   <section id="about" class="about__container">
@@ -88,6 +126,14 @@ const footerHTML = `
 </footer>
 `;
 
+//Função para o "Header"
+function insertHeader() {
+  const headerContainer = document.getElementById("header-container");
+  if (headerContainer) {
+    headerContainer.innerHTML = headerHTML;
+  }
+}
+
 //Funão para a seção "About"
 function insertAboutSection() {
   const aboutContainer = document.getElementById("about-container");
@@ -100,11 +146,12 @@ function insertAboutSection() {
 function insertFooter() {
   const footerContainer = document.getElementById("footer-container");
   if (footerContainer) {
-      footerContainer.innerHTML = footerHTML;
+    footerContainer.innerHTML = footerHTML;
   }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
+  insertHeader();
   insertAboutSection();
   insertFooter();
 });
