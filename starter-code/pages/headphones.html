@@ -4,184 +4,75 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <!-- font awesome -->
+  <link 
+  rel="stylesheet" 
+  href="//use.fontawesome.com/releases/v6.5.1/css/all.css" />
+  <!-- style -->
+  <link rel="stylesheet" href="../src/styles/category.css">
 
-  <title>Frontend Mentor | Audiophile e-commerce website</title>
+  <!-- script -->
+  <script src="../src/script/index.js" defer></script>
+  <title>Headphones</title>
 </head>
 
 <body>
   <!-- Cabeçalho do site -->
-  <header class="header__container">
-    <div class="header__content">
-        <p class="header__title">
-            <img 
-            src="./starter-code/assets/shared/desktop/logo.svg" 
-            alt="Logo audiophile">
-        </p>
-        <!-- Navegação -->
-        <nav>
-            <ul class="header__list">
-                <li class="list__item">
-                    <a 
-                    class="list__item--link"  
-                    href="#home">Home</a>
-                </li>
-                <li class="list__item">
-                    <a 
-                    class="list__item--link" 
-                    href="#headphones">Headphones</a>
-                    </li>
-                <li class="list__item">
-                    <a 
-                    class="list__item--link" 
-                    href="#speakers">Speakers</a>
-                </li>
-                <li class="list__item">
-                    <a 
-                    class="list__item--link" 
-                    href="#earphones">Earphones</a>
-                </li>
-            </ul>
-        </nav>
-        <!-- Icone do carrinho -->
-        <p class="header__icon--cart">
-            <img 
-            src="./starter-code/assets/shared/desktop/icon-cart.svg" 
-            alt="Icone de carrinho">
-        </p>
-    </div>
-</header>
+  <div id="header__container"></div>
 <main>
     <!-- Banner página do produto -->
     <section id="banner" class="banner__product">
-        <div class="banner-product">
-            
-            <p class="banner__title">Headphones</p>
-            
+        <div class="prodcut__content">
+            <p class="product__title">Headphones</p>
         </div>
     </section>
     <!-- Headphones: lista de produtos -->
-    <section class="headphones headphones__container">
-        <div class="headphones__content">
-            <!-- Detalhes do produto -->
-            <div class="headphones__information">
-                <p class="information__product">new product</p>
-                <h1 class="information__title">XX99 Mark II Headphones</h1>
-                <p class="information__text">
-                    The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium 
-                    headphone experience by reproducing the balanced depth and precision of studio-quality sound.
-                </p>
-                <button class="headphones__button--link">
-                    <a 
-                    class="headphones__link" 
-                    href="#">See product</a>
-                </button>
+    <section class="item__container">
+        <div class="item__content">
+          <img class="item__image" src="../assets/shared/desktop/image-xx99-mark-two-headphones.jpg" alt="">
+            <div class="item__information">
+              <p class="information__product">new product</p>
+              <h1 class="information__title">XX99 Mark II Headphones</h1>
+              <p class="information__text">
+                The new XX99 Mark II headphones is the pinnacle of pristine audio. It redefines your premium
+                headphone experience by reproducing the balanced depth and precision of studio-quality sound.
+              </p>
+              <a class="information__button--link" href="#">See product</a>
             </div>
-            <div class="headphones__background"></div>
         </div>
       </section>
-      <section class="headphones headphones__container">
-        <div class="headphones__content">
-            <!-- Detalhes do produto -->
-            <div class="headphones__information">
+
+      <section class="item__container">
+        <div class="item__content item__content--inverted">
+          <img class="item__image" src="../assets/shared/desktop/image-xx99-mark-one-headphones.jpg" alt="">
+            <div class="item__information item__information--inverted">
                 <h1 class="information__title">XX99 Mark I Headphones</h1>
                 <p class="information__text">
                     As the gold standard for headphones, the classic XX99 Mark I offers detailed and accurate audio 
                     reproduction for audiophiles, mixing engineers, and music aficionados alike in studios and on the go.
                 </p>
-                <button class="headphones__button--link">
-                    <a 
-                    class="headphones__link" 
-                    href="#">See product</a>
-                </button>
+                <a class="information__button--link" href="#">See product</a>
             </div>
-            <div class="headphones__background"></div>
         </div>
       </section>
-      <section class="headphones headphones__container">
-        <div class="headphones__content">
-            <!-- Detalhes do produto -->
-            <div class="headphones__information">
+      <section class="item__container">
+        <div class="item__content">
+          <img class="item__image" src="../assets/shared/desktop/image-xx59-headphones.jpg" alt="">
+            <div class="item__information">
                 <h1 class="information__title">XX59 Headphones</h1>
                 <p class="information__text">
                     Enjoy your audio almost anywhere and customize it to your specific tastes with the XX59 headphones. 
                     The stylish yet durable versatile wireless headset is a brilliant companion at home or on the move.
                 </p>
-                <button class="headphones__button--link">
-                    <a 
-                    class="headphones__link" 
-                    href="#">See product</a>
-                </button>
+                  <a class="information__button--link" href="#">See product</a>
             </div>
             <div class="headphones__background"></div>
         </div>
       </section>
-      <!-- Seção de produtos -->
-      <section id="products" class="products__container">
-        <div class="products__content">
-            <ul class="products__list">
-                <li class="list__item--product">
-                    <img 
-                    src="./starter-code/assets/product-xx99-mark-one-headphones/desktop/image-category-page-preview-removebg-preview.png" 
-                    alt=""
-                    class="product__image">
-                    <p class="product__text">Headphones</p>
-                    <div class="product__link">
-                        <a href="#" class="product__link--item">
-                            shop 
-                        </a>
-                        <img 
-                        src="./starter-code/assets/shared/desktop/icon-arrow-right.svg" alt="">
-                    </div>
-
-                </li>
-                <li class="list__item--product">
-                    <img 
-                    src="./starter-code/assets/product-zx9-speaker/desktop/image-category-page-preview-removebg.png" 
-                    alt=""
-                    class="product__image" \>
-                    <p class="product__text">Speakers</p>
-                    <div class="product__link">
-                        <a href="#" class="product__link--item">shop</a>
-                        <img 
-                        src="./starter-code/assets/shared/desktop/icon-arrow-right.svg" alt="">
-                    </div>
-                </li>
-                <li class="list__item--product">
-                    <img 
-                    src="./starter-code/assets/product-yx1-earphones/desktop/image-category-page-preview-removebg.png" 
-                    alt="" 
-                    class="product__image">
-                    <p class="product__text">Earphones</p>
-                    <div class="product__link">
-                        <a href="#" class="product__link--item">shop</a>
-                        <img 
-                        src="./starter-code/assets/shared/desktop/icon-arrow-right.svg" alt="">
-                    </div>
-                </li>
-            </ul>
-        </div>
-      </section>
+      <div id="about__container"></div>
 </main>
   
-  
-  Bringing you the best audio gear
-  Located at the heart of New York City, Audiophile is the premier store for high end headphones,
-  earphones, speakers, and audio accessories. We have a large showroom and luxury demonstration
-  rooms available for you to browse and experience a wide range of our products. Stop by our store
-  to meet some of the fantastic people who make Audiophile the best place to buy your portable
-  audio equipment.
-
-  Home
-  Headphones
-  Speakers
-  Earphones
-
-  Audiophile is an all in one stop to fulfill your audio needs. We're a small team of music lovers
-  and sound specialists who are devoted to helping you get the most out of personal audio. Come and
-  visit our demo facility - we’re open 7 days a week.
-
-  Copyright 2021. All Rights Reserved
+<div id="footer__container"></div>
 </body>
 </html>
