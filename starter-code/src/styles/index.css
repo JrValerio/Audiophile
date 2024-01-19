@@ -1,0 +1,220 @@
+@import url(./globalStyles.css);
+
+/* banner - HOME */
+.banner__container {
+  background-color: var(--black-300);
+  height: 730px;
+}
+
+.banner__content {
+  display: flex;
+  align-items: center;
+}
+
+.banner__background {
+  background-image: url("../../assets/home/desktop/image-hero.jpg");
+  background-position: 80%;
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  width: 700px;
+  height: 700px;
+}
+
+.banner__information {
+  max-width: 400px;
+}
+
+.information__product {
+  font-size: var(--fs-200);
+  color: var(--white-100);
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  opacity: 0.4964;
+}
+
+.information__title {
+  font-size: var(--fs-900);
+  color: var(--white-100);
+  font-weight: 700;
+  letter-spacing: 2px;
+  line-height: 58px;
+  text-transform: uppercase;
+
+  padding-block: 1.5rem;
+}
+
+.information__text {
+  font-size: var(--fs-300);
+  color: var(--white-100);
+  font-weight: 500;
+  line-height: 25px;
+  opacity: 0.75;
+}
+
+.banner__button--link {
+  margin-top: 2.5rem;
+  background-color: var(--orange-100);
+  color: var(--white-100);
+}
+
+.banner__button--link:hover {
+  background-color: var(--orange-200);
+}
+
+/* seção de produtos - HOME*/
+
+.products__list {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-top: 200px;
+}
+
+.list__item--product {
+  max-width: 350px;
+  width: 21rem;
+  height: 200px;
+  background-color: var(--white-200);
+  border-radius: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  position: relative;
+}
+
+.product__image {
+  width: 230px;
+  top: -70px;
+  position: absolute;
+}
+
+.product__text {
+  padding-top: 116px;
+  color: var(--black-100);
+  font-size: var(--fs-400);
+  letter-spacing: 2px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.product__link {
+  padding-top: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.product__link--item {
+  color: var(--black-100);
+  font-size: var(--fs-100);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  opacity: 0.5;
+}
+
+.recommended__container {
+  margin-top: 10rem;
+}
+
+.recommended__item--speakerX9 {
+  background: url("../../assets/shared/desktop/image-category-thumbnail-speakers.png")
+  no-repeat left 190px / contain;
+
+  background-color: var(--orange-100);
+  border-radius: 0.5rem;
+  height: 580px;
+
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+}
+
+.item__container--speakerX9 {
+  margin-right: 6.25rem;
+}
+
+.item__title--speakerX9 {
+  max-width: 16.25rem;
+  font-size: var(--fs-900);
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  line-height: 60px;
+  color: var(--white-100);
+}
+
+.item__text--speakerX9 {
+  max-width: 350px;
+  padding-top: 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  color: var(--white-100);
+}
+
+.item__button--full {
+  background-color: var(--black-100);
+  color: var(--white-100);
+  margin-top: 2.5rem;
+}
+
+.item__button--full:hover {
+  background-color: var(--gray-100);
+}
+
+.recommended__item--speakerX7 {
+  background: url("../../assets/product-zx7-speaker/desktop/image-gallery-4.jpg")
+    no-repeat;
+  margin-top: 3rem;
+  background-color: var(--white-200);
+  height: 20rem;
+  border-radius: 0.5rem;
+}
+
+.item__container {
+  padding: 101px 95px;
+}
+
+.item__title {
+  color: var(--black-100);
+  font-size: var(--fs-600);
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  padding-bottom: 1.875rem;
+}
+
+.item__button--default {
+  background-color: transparent;
+  border: 1px solid var(--black-100);
+}
+
+.item__button--default:hover {
+  background-color: var(--black-100);
+  color: var(--white-100);
+}
+.recommended__item--earphonesX1 {
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.875rem;
+}
+.item__image--earphonesX1,
+.item--earphonesX1 {
+  width: 540px;
+  height: 320px;
+  background-color: var(--white-200);
+}
+
+.item__image--earphonesX1 > img {
+  width: 540px;
+  height: 320px;
+  border-radius: 8px;
+}
+
