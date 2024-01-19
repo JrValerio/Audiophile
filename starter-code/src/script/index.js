@@ -4,7 +4,7 @@ const headerHTML = `
       <div class="header__content">
         <p class="header__title">
           <img
-            src="./starter-code/assets/shared/desktop/logo.svg"
+            src="../assets/shared/desktop/logo.svg"
             alt="Logo audiophile"
           />
         </p>
@@ -12,7 +12,7 @@ const headerHTML = `
         <nav>
           <ul class="header__list">
             <li class="list__item">
-              <a class="list__item--link" href="#home">Home</a>
+              <a class="list__item--link" href="../../../index.html">Home</a>
             </li>
             <li class="list__item">
               <a class="list__item--link" href="#headphones">Headphones</a>
@@ -28,7 +28,7 @@ const headerHTML = `
         
         <p class="header__icon--cart">
           <img
-            src="./starter-code/assets/shared/desktop/icon-cart.svg"
+            src="../assets/shared/desktop/icon-cart.svg"
             alt="Icone de carrinho"
           />
         </p>
@@ -51,7 +51,7 @@ const aboutHTML = `
           best place to buy your portable audio equipment.
         </p>
       </div>
-      <img src="./starter-code/assets/shared/desktop/image-best-gear.jpg" alt="">
+      <img src="../assets/shared/desktop/image-best-gear.jpg" alt="">
     </div>        
   </section>
 `;
@@ -64,14 +64,14 @@ const footerHTML = `
     <div class="footer__Social">
       <div class="footer__brand">
         <img
-          src="./starter-code/assets/shared/desktop/logo.svg"
+          src="../assets/shared/desktop/logo.svg"
           alt="Logo audiophile"
         />
       </div>
       <div class="footer__social-media">
         <nav class="footer__navigation">
           <ul class="footer__nav-list">
-            <li><a href="/home">Home</a></li>
+            <li><a href="../../../index.html">Home</a></li>
             <li><a href="/headphones">Headphones</a></li>
             <li><a href="/speakers">Speakers</a></li>
             <li><a href="/earphones">Earphones</a></li>
@@ -128,7 +128,7 @@ const footerHTML = `
 
 //Função para o "Header"
 function insertHeader() {
-  const headerContainer = document.getElementById("header-container");
+  const headerContainer = document.getElementById("header__container");
   if (headerContainer) {
     headerContainer.innerHTML = headerHTML;
   }
@@ -136,7 +136,7 @@ function insertHeader() {
 
 //Funão para a seção "About"
 function insertAboutSection() {
-  const aboutContainer = document.getElementById("about-container");
+  const aboutContainer = document.getElementById("about__container");
   if (aboutContainer) {
     aboutContainer.innerHTML = aboutHTML;
   }
@@ -144,7 +144,7 @@ function insertAboutSection() {
 
 //Função para o "Footer"
 function insertFooter() {
-  const footerContainer = document.getElementById("footer-container");
+  const footerContainer = document.getElementById("footer__container");
   if (footerContainer) {
     footerContainer.innerHTML = footerHTML;
   }
