@@ -14,16 +14,14 @@
       href="./assets/favicon-32x32.png"
     />
     <!-- Link css -->
-    <link rel="stylesheet" href="./starter-code/src/styles/style.css" />
+    <link rel="stylesheet" href="./starter-code/src/styles/index.css" />
 
     <title>Audiophile - home</title>
   </head>
 
   <body>
     <!-- Cabeçalho do site -->
-    <div id="header-container"></div>
-
-    <!-- <header class="header__container">
+    <header class="header__container">
       <div class="header__content">
         <p class="header__title">
           <img
@@ -35,10 +33,10 @@
         <nav>
           <ul class="header__list">
             <li class="list__item">
-              <a class="list__item--link" href="#home">Home</a>
+              <a class="list__item--link" href="./index.html">Home</a>
             </li>
             <li class="list__item">
-              <a class="list__item--link" href="#headphones">Headphones</a>
+              <a class="list__item--link" href="./starter-code/pages/headphones.html">Headphones</a>
             </li>
             <li class="list__item">
               <a class="list__item--link" href="#speakers">Speakers</a>
@@ -56,7 +54,7 @@
           />
         </p>
       </div>
-    </header> -->
+    </header>
 
     <!-- Seção principal com o produto em destaque -->
     <main>
@@ -70,9 +68,11 @@
               Experience natural, lifelike audio and exceptional build quality
               made for the passionate music enthusiast.
             </p>
-            <button class="banner__button--link button__box">
-              See product
-            </button>
+            <a href="./starter-code/pages/headphones.html">
+                <button class="banner__button--link button__box">
+                  See product
+                </button>
+              </a>
           </div>
           <div class="banner__background"></div>
         </div>
@@ -90,7 +90,7 @@
               />
               <p class="product__text">Headphones</p>
               <div class="product__link">
-                <a href="#" class="product__link--item"> shop </a>
+                <a href="./starter-code/pages/headphones.html" class="product__link--item"> shop </a>
                 <img
                   src="./starter-code/assets/shared/desktop/icon-arrow-right.svg"
                   alt=""
@@ -175,9 +175,7 @@
       </section>
 
       <!-- Seção sobre a loja -->
-      <div id="about-container"></div>
-
-      <!-- <section id="about" class="about__container">
+      <section id="about" class="about__container">
           <div class="about__content">
             <div class="about__information">
               <h2 class="about__title">Bringing you the <span>best</span> audio gear</h2>
@@ -193,13 +191,11 @@
             <img src="./starter-code/assets/shared/desktop/image-best-gear.jpg" alt="">
         </div> 
         
-      </section> -->
+      </section>
     </main>
 
     <!-- Rodapé do site -->
-    <div id="footer-container"></div>
-
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="footer__content">
         <div class="footer__line"></div>
         <div class="footer__Social">
@@ -264,7 +260,7 @@
           <p>Copyright 2021. All Rights Reserved</p>
         </div>
       </div>
-    </footer> -->
+    </footer>
     <script type="module" src="./starter-code/src/script/index.js"></script>
   </body>
 </html>
