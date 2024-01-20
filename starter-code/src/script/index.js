@@ -15,10 +15,10 @@ const headerHTML = `
               <a class="list__item--link" href="../../../index.html">Home</a>
             </li>
             <li class="list__item">
-              <a class="list__item--link" href="#headphones">Headphones</a>
+              <a class="list__item--link" href="../../../starter-code/pages/headphones.html">Headphones</a>
             </li>
             <li class="list__item">
-              <a class="list__item--link" href="#speakers">Speakers</a>
+              <a class="list__item--link" href="../../../starter-code/pages/speakers.html">Speakers</a>
             </li>
             <li class="list__item">
               <a class="list__item--link" href="#earphones">Earphones</a>
@@ -84,7 +84,7 @@ const footerHTML = `
         Audiophile is an all in one stop to fulfill your audio needs. We're
         a small team of music lovers and sound specialists who are devoted
         to helping you get the most out of personal audio. Come and visit
-        our demo facility - we’re open 7 days a week.
+        our demo facility - were open 7 days a week.
       </p>
       <ul class="footer__social-icons">
         <li>
@@ -126,11 +126,73 @@ const footerHTML = `
 </footer>
 `;
 
+const productsHtml = `
+<section id="products" class="products__container">
+        <div class="products__content">
+          <ul class="products__list">
+            <li class="list__item--product">
+              <img
+                src="../assets/shared/desktop/image-category-thumbnail-headphones.png"
+                alt=""
+                class="product__image"
+              />
+              <p class="product__text">Headphones</p>
+              <div class="product__link">
+                <a href"../../../starter-code/pages/headphones.html" class="product__link--item"> shop </a>
+                <img
+                  src="../assets/shared/desktop/icon-arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="list__item--product">
+              <img
+                src="../assets/shared/desktop/image-category-thumbnail-speakers.png"
+                alt=""
+                class="product__image"
+                \
+              />
+              <p class="product__text">Speakers</p>
+              <div class="product__link">
+                <a href="../../pages/speakers.html" class="product__link--item">shop</a>
+                <img
+                  src="../assets/shared/desktop/icon-arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+            <li class="list__item--product">
+              <img
+                src="../assets/shared/desktop/image-category-thumbnail-earphones.png"
+                alt=""
+                class="product__image"
+              />
+              <p class="product__text">Earphones</p>
+              <div class="product__link">
+                <a href="../../pages/earphones.html" class="product__link--item">shop</a>
+                <img
+                  src="../assets/shared/desktop/icon-arrow-right.svg"
+                  alt=""
+                />
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+`;
+
 //Função para o "Header"
 function insertHeader() {
   const headerContainer = document.getElementById("header__container");
   if (headerContainer) {
     headerContainer.innerHTML = headerHTML;
+  }
+}
+
+function insertProducts() {
+  const productsContainer = document.getElementById("products__container");
+  if(productsContainer){
+    productsContainer.innerHTML = productsHtml;
   }
 }
 
@@ -154,4 +216,5 @@ document.addEventListener("DOMContentLoaded", function () {
   insertHeader();
   insertAboutSection();
   insertFooter();
+  insertProducts();
 });
